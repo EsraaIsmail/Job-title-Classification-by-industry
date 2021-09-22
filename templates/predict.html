@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job title classification</title>
+</head>
+<body>
+      
+    <!-- Website Title -->
+    <div class="container">
+        <h1 class='container-heading'> Job title classification </h1>
+        <div class='description'>
+            <p>A job title classification Web App, Built with Flask </p>
+        </div>
+    </div>
+
+    <h2>Your Predicted Job is:</h2>
+    
+    {%if data == 'IT'%}
+    <h1>IT</h1>  
+    <img src='static\IT.jpg'
+    	width="500" 
+     	height="500">  
+
+    {%elif data == 'Accountancy'%}
+    <h1>Accountancy</h1>
+    <img src='static\acc.jpg'
+    	width="500" 
+     	height="500">
+    
+    {%elif data == 'Education'%}
+    <h1>Education</h1>
+    <img src='static\Ed.jpg'
+    	width="500" 
+     	height="500">
+
+    {%else%}
+    <h1>Marketing</h1>  
+    <img src='static\mk.jpg'
+    	width="500" 
+     	height="500">
+        
+    {%endif%}
+
+
+    <!-- Footer -->
+    <div class='footer'>
+        <p class='footer-description'>Made with ❤️ by Esraa Mohamed Ismail.</p>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: rgb(245, 239, 225);
+            text-align: center;
+            padding: 0px;
+            margin: 0;
+        }
+
+        /* Footer */
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            padding: 20px;
+            flex-shrink: 0;
+            background: linear-gradient(45deg, #C4CBF2, #D2D3F3, #E1DAF4, #EFE2F4, #FDE9F5, #EFE2F4, #E1DAF4, #D2D3F3, #C4CBF2);
+            background-size: 500% 500%;
+            animation: change-gradient 10s ease-in-out infinite;
+        }
+
+        /* Website Title */
+        .container{
+            padding: 30px;
+            position: relative;
+            background: linear-gradient(45deg, #C4CBF2, #D2D3F3, #E1DAF4, #EFE2F4, #FDE9F5, #EFE2F4, #E1DAF4, #D2D3F3, #C4CBF2);
+            background-size: 500% 500%;
+            animation: change-gradient 10s ease-in-out infinite;
+        }
+        @keyframes change-gradient {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+
+        .container-heading{
+            margin: 0;
+        }
+    </style>
+
+</body>
+
+</html>
