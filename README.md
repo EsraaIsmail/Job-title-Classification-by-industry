@@ -9,13 +9,7 @@ The problem is a supervised text classification problem, using an imbalanced dat
         1.1- Remove duplicates data:
 I noticed that more than half of the available data are duplicated so there is no need to use a duplicate data in the model training it is lead to a false accuracy, thus I removed duplicate data.
 Removing duplicate data helped partially to solve the problem of imbalanced data.
-Data classes distribution before removing duplicates:
-
-Figure 1 : Data classes distribution before removing duplicates
-
-Data classes distribution after removing duplicates:
-
-Figure 2 : Data classes distribution after removing duplicates
+Data classes distribution before removing duplicates
 
         1.2- Removing words less than 2 char 
         1.3- Removing numbers 
